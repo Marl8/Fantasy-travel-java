@@ -1,0 +1,273 @@
+@import "../style.css";
+
+main{
+    background-color: rgb(174, 134, 174);
+    margin: 10% 25% auto;
+    padding: 0;
+    border-radius: 4%;
+}
+
+h3{
+    padding-top: 5%;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.registro{
+    
+    margin: 12% auto 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 450px;
+}
+
+.botones{
+
+    /*align-self: flex-start;*/ /*alinear el flex a la izquierda*/
+    align-self: center;
+    display: flex;
+    gap: 20px;    
+}
+
+.google-btn{
+
+    background-color: #1A73E8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center !important;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.google-btn:hover{
+
+    opacity: 0.75;
+}
+
+.google-btn span{
+
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.google-btn picture{
+
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn picture img{
+
+    width: 75%;
+}
+
+
+.separator{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 3px;
+}
+
+.separator hr{
+
+    color:  rgb(51, 243, 255);
+    border: solid 0.5px;
+    width: 37% !important;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.span{
+    color: rgb(49, 25, 49) !important;
+}
+
+
+.section-inputs{
+
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-registro{
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.section-inputs{
+    display: flex;
+}
+
+.section-inputs label input{
+
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+
+.reg-input input{
+
+    width: 100%;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover{
+
+    background-color: white;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+label input:focus{
+
+    background-color: white;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+.reg-input input:hover{
+
+    background-color: white;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+.reg-input input:focus{
+
+    background-color: white;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+.checkbox-label{
+
+    display: flex;  
+    flex-direction: row;
+}
+
+.checkbox-label input[type=checkbox]{
+
+    width: 20px;
+}
+
+.checkbox-label span{
+
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.create-btn{
+
+    width: 100%;
+    margin-bottom: 7%;
+    background-color: rgb(51, 243, 255) !important;
+    color: black;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 400;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.create-btn:hover{
+
+    opacity: 0.75;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 1050px) {
+
+    main{
+        margin-top: 15%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .descripcion{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .descripcion img{
+        width: 100vw;
+    }
+
+    .texto-descripcion{
+        padding: 2.5rem 0;
+    }
+} 
+
+@media screen and (max-width: 700px) {
+
+    .botones{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-registro{
+        margin: auto 8%;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+
+    main{
+        margin-top: 7%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .card-tarjeta{
+        padding: 1rem 10rem;
+    }
+
+    .navbar{
+        position: static !important;
+    }
+
+    .card-paquetes{
+        margin: 2% 8%; 
+    }
+} 
+
+
+/* Media query especifica para Firefox */
+/*@-moz-document url-prefix(){
+
+    .descripcion img{
+        width: 250% !important;
+    }
+}*/
