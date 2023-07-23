@@ -15,7 +15,7 @@ public class ConnectionFactory {
             Class.forName("com.mysql.cj.jdbc.Driver");
                   
             conexion = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/codoacodo_java?useTimeZone=true&serverTimeZone=UTC",
+                    "jdbc:mysql://localhost/fantasy_travel?useTimeZone=true&serverTimeZone=UTC",
                     "root",
                     "4842");
             

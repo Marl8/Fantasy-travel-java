@@ -24,6 +24,12 @@ input::placeholder {
     font-size: 15px;
 }
 
+.dropdown-login {
+  left: 51% !important;
+  transform: translateX(-50%) !important;
+  top: 100% !important;
+}
+
 .dropdown-item{
     font-size: 15px;
 }

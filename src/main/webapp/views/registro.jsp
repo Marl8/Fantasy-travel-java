@@ -16,6 +16,12 @@
 
 <%@include file="/views/partials/header.jsp"%>
 
+<%
+  if ((boolean)session.getAttribute("login")){
+    response.sendRedirect("/"+proyecto);
+  }  
+%>
+
     <main>
         <section class="container registro d-flex">
             <h3>Registrate en el Formulario</h3>
@@ -40,42 +46,42 @@
                 <span class="mx-1">O...</span>
                 <hr>
             </div>    
-            <form class="form-registro" action="" method="">
+            <form class="form-registro" action="/fantasy/registro" method="POST">
                 <div class="col">
                     <div class="section-inputs">
                         <label for="name" class="form-label name pb-2">
                             <div class="name">Nombre</div>
-                            <input id="name" name="name" class="form-control">
+                            <input id="name" name="name" class="form-control" required>
                         </label>
                         <label for="apellido" class="apellido ms-4 pb-2">
                             <div>Apellido</div>
-                            <input id="apellido" name="apellido" class="form-control">
+                            <input id="apellido" name="apellido" class="form-control" required>
                         </label>
                     </div>
                     <div class="section-inputs">
                         <label for="dni" class="form-label dni pb-2">
                             <div class="name">DNI</div>
-                            <input id="dni" name="dni" class="form-control">
+                            <input id="dni" name="dni" class="form-control" required>
                         </label>
                         <label for="username" class="username ms-4 pb-2">
                             <div>Username</div>
-                            <input id="username" name="username" class="form-control">
+                            <input id="username" name="username" class="form-control" required>
                         </label>
                     </div>  
                     <div class="reg-input col-auto pb-3">
                         <label for="email" class="text-start">
                             Email
                         </label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="email">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="email" required>
                     </div>
                     <div class="reg-input col-auto pb-4">
                         <label for="password">
                             Password
                         </label>     
-                        <input type="password" id="password" name="password"  class="form-control" placeholder="6+ caracteres">
+                        <input type="password" id="password" name="password"  class="form-control" placeholder="6+ caracteres" required>
                     </div>               
                     <label for="checkbox" class="checkbox-label pb-4">
-                        <input type="checkbox" id="checkbox">
+                        <input type="checkbox" id="checkbox" name="chekbox-terminos" required>
                         <span class="ps-2">Acepto las condiciones y el aviso legal</span>
                     </label>
                     <button type="submit" class="btn create-btn py-3">Crear cuenta</button>

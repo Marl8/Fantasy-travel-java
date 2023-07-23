@@ -6,6 +6,20 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+<%
+    String proyecto = "fantasy";
+    boolean login;
+    String username;
+    
+    if (session.isNew()){
+        session.setAttribute("login", false);
+        session.setAttribute("username", " ");
+    }
+    
+    login = (boolean)session.getAttribute("login");
+    username = (String)session.getAttribute("username");
+%>
+
     <body>
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary px-3 fixed-top" data-bs-theme="dark">
@@ -58,19 +72,22 @@
                             <a class="nav-link link-turquesa link-comprar ms-2" href="/fantasy/views/login.jsp">Comprar</a>
                         </li>
                         <li>
-                            <div class="dropdown">
-                                <button class="btn btn-outline-info dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-
+                            <div class="dropdown-center <%=!login?"d-none":"d-initial"%>">
+                                <button class="btn btn-info dropdown-toggle mx-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-users me-2"></i><%=username%></button>       
                                 </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu dropdown-login">
+                                  <li><a class="dropdown-item text-center" href="/<%=proyecto%>/views/perfil_usuario.jsp">Mi perfil</a></li>
+                                  <li><a class="dropdown-item text-center" href="/<%=proyecto%>/views/reservas.jsp">Reservas</a></li>
+                                  <li><a class="dropdown-item text-center" href="#">Mis reservas</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item text-center" href="/<%=proyecto%>/logout">
+                                    <i class="fa-solid fa-right-to-bracket me-2"></i>Cerrar Sesión</a></li>
                                 </ul>
                           </div>
                         </li>
                         <li>
-                            <a href="/fantasy/views/login.jsp"><button type="button" class="btn btn-outline-info ms-4">
+                            <a href="/fantasy/views/login.jsp"><button type="button" class="btn btn-outline-info ms-2 <%=login?"d-none":"d-initial"%>">
                                 <i class="fa-regular fa-user"></i> Ingresar</button></a>
                         </li>
                     </ul>

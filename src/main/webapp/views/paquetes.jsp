@@ -84,7 +84,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -128,7 +128,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -193,7 +193,7 @@
                     <i class="fa-solid fa-plane pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -216,7 +216,7 @@
                     <i class="fa-solid fa-ship pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -237,7 +237,7 @@
                     <i class="fa-solid fa-plane pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -258,7 +258,7 @@
                     <i class="fa-solid fa-plane pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.html"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>

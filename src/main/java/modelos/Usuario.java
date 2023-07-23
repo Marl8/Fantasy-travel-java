@@ -15,8 +15,7 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String apellido, String dni, String username, String password, String email) {
-        this.id = id;
+    public Usuario(String nombre, String apellido, String dni, String username, String password, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -24,6 +23,7 @@ public class Usuario {
         this.password = password;
         this.email = email;
     }
+    
 
     public int getId() {
         return id;
@@ -75,6 +75,11 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", username=" + username + ", password=" + password + ", email=" + email + '}';
     }
     
     

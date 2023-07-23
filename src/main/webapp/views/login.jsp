@@ -16,6 +16,12 @@
 
 <%@include file="/views/partials/header.jsp"%>
 
+<%
+  if ((boolean)session.getAttribute("login")){
+    response.sendRedirect("/"+proyecto);
+  }  
+%>
+
     <main>
         <section class="container registro d-flex">
             <h3>Iniciar Sesión</h3>
@@ -41,19 +47,19 @@
                 <hr>
             </div>            
         </section>    
-        <form class="form-registro mb-5" action="" method="">
+        <form class="form-registro mb-5" action="/fantasy/usuario" method="POST">
             <div class="col">
                 <div class="reg-input col-auto pb-3">
-                    <label for="email" class="text-start">
-                        Email
+                    <label for="Username" class="text-start">
+                        Username
                     </label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="email">
+                    <input type="text" id="email" name="username" class="form-control" placeholder="username" required>
                 </div>
                 <div class="reg-input col-auto pb-4 mb-1">
                     <label for="password">
                         Password
                     </label>     
-                    <input type="password" id="password" name="password"  class="form-control" placeholder="6+ caracteres">
+                    <input type="password" id="password" name="password"  class="form-control" placeholder="6+ caracteres" required>
                 </div> 
                 <div class="row mb-4">
                     <div class="col d-flex justify-content-center">
@@ -65,8 +71,9 @@
                     <div class="col">
                         <a class="letras" href="#!">Ovidaste el password?</a>
                     </div>
-                </div>        
-                <button type="submit" class="btn create-btn py-3 mb-4">Ingresar</button>
+                </div>
+                <button type="submit" id="btn-login" class="btn create-btn py-3 mb-4" value="login" onclick="mostrarAlerta();">Ingresar</button>
+                
                 <div class="text-center">
                     <p class="mb-4">No eres miembro? <a class="btn btn-registrarse ms-4" href="registro.jsp">Registrate</a></p>
                 </div>    
