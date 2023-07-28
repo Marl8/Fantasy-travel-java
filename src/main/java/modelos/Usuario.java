@@ -15,6 +15,16 @@ public class Usuario {
     public Usuario() {
     }
 
+    public Usuario(int id, String nombre, String apellido, String dni, String username, String password, String email) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
+
     public Usuario(String nombre, String apellido, String dni, String username, String password, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -23,6 +33,8 @@ public class Usuario {
         this.password = password;
         this.email = email;
     }
+    
+    
     
 
     public int getId() {

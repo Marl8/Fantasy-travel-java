@@ -16,7 +16,15 @@
 
 <%@include file="/views/partials/header.jsp"%>
 
-    <div id="carouselExample" class="carousel slide card-superpuesta" data-bs-ride="carousel">
+<%
+String url = "reservas.jsp";
+        
+if (!(boolean)session.getAttribute("login")){
+        url = "login.jsp";
+    }
+%>
+ 
+<div id="carouselExample" class="carousel slide card-superpuesta" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="../imagenes/Japon.jpg" class="d-block w-100" alt="Rio">
@@ -84,7 +92,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -106,7 +114,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -128,7 +136,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -150,7 +158,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -172,7 +180,7 @@
                     <i class="fa-solid fa-utensils pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -193,7 +201,7 @@
                     <i class="fa-solid fa-plane pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -216,7 +224,7 @@
                     <i class="fa-solid fa-ship pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -237,7 +245,7 @@
                     <i class="fa-solid fa-plane pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>
@@ -258,7 +266,7 @@
                     <i class="fa-solid fa-plane pb-3"></i>
                 </div>
                 <div class="text-center">
-                    <a href="login.jsp"><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
+                    <a href=<%=url%>><button type="button" class="btn btn-outline-info btn-paquetes">Reserva tu lugar</button></a> 
                 </div>
             </div>
         </div>

@@ -46,7 +46,7 @@
                         <textarea class="textarea form-control" name="comentarios" id="exampleTextarea" cols="100" rows="10" placeholder="Comentarios">Comentarios</textarea>
                     </div>
                 </div>        
-                <button type="submit" class="btn create-btn py-3">Enviar</button>  
+                <button type="submit" class="btn create-btn w-100 py-3">Enviar</button>  
             </div>
         </form>
     </main>

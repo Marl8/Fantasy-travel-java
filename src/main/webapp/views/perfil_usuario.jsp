@@ -60,7 +60,7 @@
                 <label for="nombre">
                     Nombre
                 </label>     
-                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" value="<%=nombre%>">
+                <input type="text" id="nombre" name="codigo" class="form-control" placeholder="Nombre">
             </div> 
             <div class="reg-input col-auto pb-3 mb-1">
                 <label for="apellido">

@@ -65,7 +65,7 @@
     </div> 
     <div class="container py-5 mejores-destinos">
         <h3>Disfruta de los mejores destinos</h3>
-        <p class="py-2">Brindamos servicios de calidad para que puedas vivir tus vacaciones soÃ±adas.</p>
+        <p class="py-2">Brindamos servicios de calidad para que puedas vivir tus vacaciones soñadas.</p>
         <hr>
     </div>  
     <div class="container px-3 card-tarjeta">

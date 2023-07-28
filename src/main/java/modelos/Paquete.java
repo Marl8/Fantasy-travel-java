@@ -1,31 +1,37 @@
 
 package modelos;
 
-import java.util.Date;
-
 
 public class Paquete {
 
-    private int ind;
+    private int id;
     private String nombre;
     private int duracion;
-    private Date fechaSalida;
+    private String seguro_viajero;
+    private String media_pension;
     private double precio;
 
     
     public Paquete() {
     }    
 
-    public Paquete(int ind, String nombre, int duracion, Date fechaSalida, double precio) {
-        this.ind = ind;
+    public Paquete(int id, String nombre, int duracion, String seguro_viajero, String media_pension, double precio) {
+        this.id = id;
         this.nombre = nombre;
         this.duracion = duracion;
-        this.fechaSalida = fechaSalida;
+        this.seguro_viajero = seguro_viajero;
+        this.media_pension = media_pension;
         this.precio = precio;
     }
 
-    public int getInd() {
-        return ind;
+    
+    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -44,14 +50,22 @@ public class Paquete {
         this.duracion = duracion;
     }
 
-    public Date getFechaSalida() {
-        return fechaSalida;
+    public String getSeguro_viajero() {
+        return seguro_viajero;
     }
 
-    public void setFechaSalida(Date fechaSalida) {
-        this.fechaSalida = fechaSalida;
+    public void setSeguro_viajero(String seguro_viajero) {
+        this.seguro_viajero = seguro_viajero;
     }
 
+    public String getMedia_pension() {
+        return media_pension;
+    }
+
+    public void setMedia_pension(String media_pension) {
+        this.media_pension = media_pension;
+    }
+    
     public double getPrecio() {
         return precio;
     }
@@ -62,7 +76,7 @@ public class Paquete {
 
     @Override
     public String toString() {
-        return "Paquete{" + "ind=" + ind + ", nombre=" + nombre + ", duracion=" + duracion + ", fechaSalida=" + fechaSalida + ", precio=" + precio + '}';
+        return "Paquete{" + "id=" + id + ", nombre=" + nombre + ", duracion=" + duracion + ", seguro_viajero=" + seguro_viajero + ", media_pension=" + media_pension + ", precio=" + precio + '}';
     }
 
 }

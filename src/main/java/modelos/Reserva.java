@@ -1,10 +1,13 @@
 
 package modelos;
 
+import java.util.Date;
+
 public class Reserva {
 
     private int codigo;
     private int cantidadPersonas;
+    private Date fechaSalida;
     private String formaPago;
     private double precioFinal;
     private Paquete paquete;
@@ -13,15 +16,34 @@ public class Reserva {
     public Reserva() {
     }
 
-    public Reserva(int codigo, int cantidadPersonas, String formaPago, double precioFinal, Paquete paquete, Usuario usuario) {
+    public Reserva(int codigo, int cantidadPersonas, Date fechaSalida, String formaPago, double precioFinal, Paquete paquete, Usuario usuario) {
         this.codigo = codigo;
         this.cantidadPersonas = cantidadPersonas;
+        this.fechaSalida = fechaSalida;
         this.formaPago = formaPago;
         this.precioFinal = precioFinal;
         this.paquete = paquete;
         this.usuario = usuario;
     }
 
+    public Reserva(int cantidadPersonas, Date fechaSalida, String formaPago, double precioFinal, Paquete paquete, Usuario usuario) {
+        this.cantidadPersonas = cantidadPersonas;
+        this.fechaSalida = fechaSalida;
+        this.formaPago = formaPago;
+        this.precioFinal = precioFinal;
+        this.paquete = paquete;
+        this.usuario = usuario;
+    }
+
+    public Reserva(int codigo, int cantidadPersonas, Date fechaSalida, String formaPago, double precioFinal) {
+        this.codigo = codigo;
+        this.cantidadPersonas = cantidadPersonas;
+        this.fechaSalida = fechaSalida;
+        this.formaPago = formaPago;
+        this.precioFinal = precioFinal;
+    }
+    
+   
     public int getCodigo() {
         return codigo;
     }
@@ -33,6 +55,15 @@ public class Reserva {
     public void setCantidadPersonas(int cantidadPersonas) {
         this.cantidadPersonas = cantidadPersonas;
     }
+
+    public Date getFechaSalida() {
+        return fechaSalida;
+    }
+
+    public void setFechaSalida(Date fechaSalida) {
+        this.fechaSalida = fechaSalida;
+    }
+    
 
     public String getFormaPago() {
         return formaPago;
@@ -68,7 +99,16 @@ public class Reserva {
 
     @Override
     public String toString() {
-        return "Reserva{" + "codigo=" + codigo + ", cantidadPersonas=" + cantidadPersonas + ", formaPago=" + formaPago + ", precioFinal=" + precioFinal + ", paquete=" + paquete + ", usuario=" + usuario + '}';
+        return "Reserva{" + "codigo=" + codigo + ", cantidadPersonas=" + cantidadPersonas + ", fechaSalida=" + fechaSalida + ", formaPago=" + formaPago + ", precioFinal=" + precioFinal + ", paquete=" + paquete + ", usuario=" + usuario + '}';
+    }
+
+    public java.sql.Date fechaConvertida (){
+        
+        this.fechaSalida = new java.util.Date();
+    
+        java.sql.Date fechaConvertida = new java.sql.Date(this.fechaSalida.getTime());
+        
+        return fechaConvertida;
     }
     
     

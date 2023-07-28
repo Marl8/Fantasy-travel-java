@@ -49,20 +49,21 @@ public class UsuarioDao {
         PreparedStatement ps;
         ResultSet rs;
         Usuario user = null;
-        ps = connection.prepareStatement("SELECT password,name,last_name,email,dni FROM usuarios WHERE username = ?");
+        ps = connection.prepareStatement("SELECT id,password,name,last_name,email,dni FROM usuarios WHERE username = ?");
         
         ps.setString(1, username);
 
         rs = ps.executeQuery();
 
         if(rs.next()) {
+            int id = rs.getInt("id");
             String nombre = rs.getString("name");
             String apellido = rs.getString("last_name");
             String dni = rs.getString("dni");
             String password = rs.getString("password");
             String email = rs.getString("email");                      
                     
-            user = new Usuario(nombre, apellido, dni, username, password, email);
+            user = new Usuario(id, nombre, apellido, dni, username, password, email);
         }
         
         if (connection != null){

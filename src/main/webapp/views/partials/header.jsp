@@ -69,7 +69,7 @@
                             <a class="nav-link" href="/fantasy/views/contacto.jsp">Contacto</a>    
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-turquesa link-comprar ms-2" href="/fantasy/views/login.jsp">Comprar</a>
+                            <a class="nav-link link-turquesa link-comprar ms-2" href="/fantasy/views/reservas.jsp">Comprar</a>
                         </li>
                         <li>
                             <div class="dropdown-center <%=!login?"d-none":"d-initial"%>">
@@ -77,11 +77,14 @@
                                   <i class="fa-solid fa-users me-2"></i><%=username%></button>       
                                 </button>
                                 <ul class="dropdown-menu dropdown-login">
-                                  <li><a class="dropdown-item text-center" href="/<%=proyecto%>/views/perfil_usuario.jsp">Mi perfil</a></li>
-                                  <li><a class="dropdown-item text-center" href="/<%=proyecto%>/views/reservas.jsp">Reservas</a></li>
-                                  <li><a class="dropdown-item text-center" href="#">Mis reservas</a></li>
+                                  <li><a class="dropdown-item text-center mb-2 px-4" href="/<%=proyecto%>/views/perfil_usuario.jsp">
+                                    <i class="fa-solid fa-user-gear me-2"></i>Mi perfil</a></li>
+                                  <li><a class="dropdown-item text-center mb-2 mb-2 px-4" href="/<%=proyecto%>/views/reservas.jsp">
+                                    <i class="fa-regular fa-calendar-check me-2"></i>Realizar reservas</a></li>
+                                  <li><a class="dropdown-item text-center mb-2 px-4" href="/<%=proyecto%>/listaReservas">
+                                    <i class="fa-regular fa-calendar-days me-2"></i></i>Mis reservas</a></li>
                                   <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item text-center" href="/<%=proyecto%>/logout">
+                                  <li><a class="dropdown-item text-center mb-2 px-4" href="/<%=proyecto%>/logout">
                                     <i class="fa-solid fa-right-to-bracket me-2"></i>Cerrar Sesión</a></li>
                                 </ul>
                           </div>
