@@ -135,7 +135,7 @@
                 V)	 CONOCIMIENTO Y ACEPTACIÓN DE CONDICIONES: Estas condiciones son entregadas por Fantasy Travel al Pasajero al momento de realizar la reserva y/o contratación de los servicios. El Pasajero declara conocer y aceptar las presentes condiciones generales de contratación y dicha aceptación queda ratificada mediante la firma del Pasajero al pie de las presentes, del representante del lugar de la agencia, haciéndose entrega en este acto de una (1) copia a favor del pasajero.
             </p>
         </div>
-        <button type="button" class="btn btn-info">Consultanos</button>
+        <a href="/fantasy/views/contacto.jsp"><button type="button" class="btn btn-info">Consultanos</button></a>
     </div>
 
  <%@include file="/views/partials/footer.jsp"%>

@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/reserva.css">
     <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -95,9 +95,9 @@
                         Precio Final
                     </label>      
                     <input type="text" id="precio" name="precio" class="form-control mb-5" placeholder="Precio Final" required disabled>           
-                    <button type="button" id="calcular" class="btn create-btn py-2 w-20" onclick="pagoFinal();">Calcular</button>
-                    <button type="button" class="btn create-btn py-2 w-20" onclick="this.form.reset();">borrar</button>
-                    <a href="/fantasy/reservas"><button type="submit" class="btn create-btn ms-4 py-2">Reservar</button></a>
+                    <button type="button" id="calcular" class="btn create-btn calcular py-2 w-20" onclick="pagoFinal();">Calcular</button>
+                    <button type="button" class="btn create-btn borrar py-2 w-20" onclick="this.form.reset();">borrar</button>
+                    <a href="/fantasy/reservas"><button type="submit" class="btn create-btn reservar py-2">Reservar</button></a>
                 </div>
             </div>
         </form>

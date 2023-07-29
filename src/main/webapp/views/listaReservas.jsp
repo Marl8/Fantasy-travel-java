@@ -45,7 +45,9 @@
                 <th class="pe-3">Código de reserva</th>
                 <th class="pe-3">Paquete</th>
                 <th class="pe-3">Fecha de salida</th>
-                <th class="pe-3">Duración</th>
+                <th class="pe-3">Duración en días</th>
+                <th class="pe-3">Seguro de viajero</th>
+                <th class="pe-3">Media Pensión</th>
                 <th class="pe-3">Pasajeros</th>
                 <th class="pe-3">Forma de pago</th>
                 <th class="pe-3">Costo Final</th>
@@ -68,15 +70,17 @@
     %>    
 
             <tr>
-                <td class="pe-3"><%= r.getCodigo() %></td>
-                <td class="pe-3"><%= r.getPaquete().getNombre() %></td>
-                <td class="pe-3"><%= r.getFechaSalida()%></td>
-                <td class="pe-3"><%= r.getPaquete().getDuracion() %></td>
-                <td class="pe-3"><%= r.getCantidadPersonas() %></td>
-                <td class="pe-3"><%= r.getFormaPago() %></td>
-                <td class="pe-3"><%= "US$" + r.getPrecioFinal() %></td>
-                <td class="pe-3"><%= r.getUsuario().getUsername() %></td>
-                <td class="pe-3">
+                <td><%= r.getCodigo() %></td>
+                <td><%= r.getPaquete().getNombre() %></td>
+                <td><%= r.getFechaSalida()%></td>
+                <td><%= r.getPaquete().getDuracion() %></td>
+                <td><%= r.getPaquete().getSeguro_viajero() %></td>
+                <td><%= r.getPaquete().getMedia_pension() %></td>
+                <td><%= r.getCantidadPersonas() %></td>
+                <td><%= r.getFormaPago() %></td>
+                <td><%= "US$" + r.getPrecioFinal() %></td>
+                <td><%= r.getUsuario().getUsername() %></td>
+                <td>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-warning w-100 mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop<%=fila%>">
                         Editar
@@ -102,7 +106,7 @@
                                                <label for="pago">
                                                    Medio de pago
                                                </label>     
-                                               <select class="form-select" id="select-pago" name="pago" aria-label="Default select example" >
+                                               <select class="form-select" id="select-pago" name="pago" aria-label="Default select example" required>
                                                    <option selected value="">Open this select menu</option>
                                                    <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
                                                    <option value="Tarjeta de Débito">Tarjeta de Débito</option>
@@ -114,7 +118,7 @@
                                                <label for="salida">
                                                    Fecha Salida
                                                </label>     
-                                               <select class="form-select mb-4" id="fecha_salida" name="fecha_salida" aria-label="Default select example" >
+                                               <select class="form-select mb-4" id="fecha_salida" name="fecha_salida" aria-label="Default select example" required>
                                                    <option selected value="">Seleccione una opción</option>
                                                    <option value="2023-11-01">01-11-2023</option>
                                                    <option value="2023-12-04">04-12-2023</option>

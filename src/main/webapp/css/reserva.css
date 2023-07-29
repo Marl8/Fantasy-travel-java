@@ -11,17 +11,18 @@ h3{
     padding-top: 5%;
     font-weight: bold;
     font-family: 'Kaushan Script', cursive;
+    font-size: 35px !important;
 }
 
 .registro{
     
-    margin: 12% auto 5%;
+    margin-top: 10%;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    width: 450px;
 }
 
 .botones{
@@ -73,7 +74,6 @@ h3{
     width: 75%;
 }
 
-
 .separator{
 
     display: flex;
@@ -85,52 +85,43 @@ h3{
 
 .separator hr{
 
-    color:  rgb(51, 243, 255);
+    color:  rgb(140, 60, 140);
     border: solid 0.5px;
-    width: 37% !important;
+    width: 20% !important;
     display: inline-block;
     opacity: 0.7;
 }
 
-.span{
-    color: rgb(49, 25, 49) !important;
-}
 
+.separator span{
 
-.section-inputs{
-
-    display: flex;
-    gap: 10px;
-    width: 100%;
+    color: #8b8b8b;
 }
 
 .form-registro{
-
+    margin: auto 15%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    justify-items: center;
     gap: 30px;
-}
-
-.section-inputs{
-    display: flex;
-}
-
-.section-inputs label input{
-
-    background-color: #f3f3f4;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 14pt;
 }
 
 .reg-input input{
 
-    width: 100%;
     background-color: #f3f3f4;
     border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.textarea{
+    border: none;
+    border-color: #f3f3f4;
+    border-radius: 12px !important;
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
@@ -166,6 +157,25 @@ label input:focus{
     box-shadow: 0 0 4px #eb50ff4f;
 }
 
+.textarea:hover{
+
+    background-color: white !important;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+    cursor: pointer;
+}
+
+textarea:focus{
+
+    background-color: white !important;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+textarea#exampleTextarea {
+    background: #f3f3f4;
+}
+
 .checkbox-label{
 
     display: flex;  
@@ -184,43 +194,19 @@ label input:focus{
 }
 
 .create-btn{
-    
-    width: 50% !important;
-    margin-bottom: 7%;
+
+    margin-bottom: 10%;
+    width: 40%;
     background-color: rgb(51, 243, 255) !important;
     color: black;
     text-align: center;
     font-size: 14pt;
+    font-weight: 400;
     padding: 15px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-}
-
-.btn-danger{
-    
-    width: 50% !important;
-    margin-bottom: 7%;
-    color: black;
-    text-align: center;
-    font-size: 14pt;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.volver-btn{
-    
-    width: 50% !important;
-    margin-bottom: 7%;
-    color: white;
-    text-align: center;
-    font-size: 14pt;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    margin-right: 1em;
 }
 
 .create-btn:hover{
@@ -228,6 +214,26 @@ label input:focus{
     opacity: 0.75;
 }
 
+.registro h4{
+    margin-top: -6%;
+    margin-bottom: -2%;
+}
+
+.google-map{
+    text-align: center;
+}
+
+iframe{
+    width: 85%;
+}
+
+.w-20{
+    width: 20% !important;
+}
+
+.reservar{
+        margin-left: 2.2% !important;
+    }
 
 
 /* Responsive */
@@ -254,6 +260,17 @@ label input:focus{
     }
 } 
 
+@media screen and (max-width: 1065px) {
+    
+    .calcular, .borrar, .reservar{
+        width: 100% !important;       
+    }
+    
+    .reservar{
+        margin-left: 0 !important;
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     .botones{
@@ -264,18 +281,13 @@ label input:focus{
     .form-registro{
         margin: auto 8%;
     }
-    
-    .create-btn, .volver-btn{
-        width: 100% !important;
-    }
 } 
 
 @media screen and (max-width: 500px) {
 
     main{
-        margin-top: 7%;
-        margin-left: 6%;
-        margin-right: 6%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .card-tarjeta{
@@ -290,12 +302,3 @@ label input:focus{
         margin: 2% 8%; 
     }
 } 
-
-
-/* Media query especifica para Firefox */
-/*@-moz-document url-prefix(){
-
-    .descripcion img{
-        width: 250% !important;
-    }
-}*/

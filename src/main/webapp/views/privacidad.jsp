@@ -96,7 +96,7 @@
                 Si decidimos cambiar nuestra política sobre confidencialidad, le anunciaremos aquí los cambios, para que siempre pueda saber qué información recogemos y cómo la utilizamos.
             </p>
         </div>
-        <button type="button" class="btn btn-info">Consultanos</button>
+        <a href="/fantasy/views/contacto.jsp"><button type="button" class="btn btn-info">Consultanos</button></a>
     </div>
 
   <%@include file="/views/partials/footer.jsp"%>   

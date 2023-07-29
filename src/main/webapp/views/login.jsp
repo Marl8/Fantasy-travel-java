@@ -30,14 +30,14 @@
                     target="_blank"> <button class="google-btn text-center py-4">
                         <picture><img src="https://cdn.cdnlogo.com/logos/g/35/google-icon.svg"
                             alt="logo google"></picture>
-                        <span>Registrarse con Google</span>
+                        <span>Iniciar con Google</span>
                     </button>
                 </a> 
                 <a href="https://www.facebook.com/" target="_blank"> 
                     <button class="google-btn twitter text-center py-4">
                         <picture><img src="../imagenes/Facebook_logo.png" 
                             width="200%" alt="" class="px-1"></picture>
-                        <span class="px-2">Registrarse con Facebook</span>
+                        <span class="px-2">Iniciar con Facebook</span>
                     </button>
                 </a>  
             </div>

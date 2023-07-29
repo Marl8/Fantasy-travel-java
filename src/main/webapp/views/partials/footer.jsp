@@ -18,57 +18,57 @@
                     <h5 class="mb-4">Destinos Argentina</h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Bariloche</a>
+                        <a href="/fantasy/views/paquetes.jsp">Bariloche</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Mar del Plata</a>
+                        <a href="/fantasy/views/paquetes.jsp">Mar del Plata</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Carlos Paz</a>
+                        <a href="/fantasy/views/paquetes.jsp">Carlos Paz</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Cataratas</a>
+                        <a href="/fantasy/views/paquetes.jsp">Cataratas</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Ushuaia</a>
+                        <a href="/fantasy/views/paquetes.jsp">Ushuaia</a>
                     </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xs-2 mx-auto mt3">
                     <h5 class="mb-4 mt-4">Brasil</h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Rio de Janeiro</a>
+                        <a href="/fantasy/views/paquetes.jsp">Rio de Janeiro</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Camboriú</a>
+                        <a href="/fantasy/views/paquetes.jsp">Camboriú</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Florianópolis</a>
+                        <a href="/fantasy/views/paquetes.jsp">Florianópolis</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Buzios</a>
+                        <a href="/fantasy/views/paquetes.jsp">Buzios</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Porto de Galhinas</a>
+                        <a href="/fantasy/views/paquetes.jsp">Porto de Galhinas</a>
                     </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xs-2 mx-auto mt3">
                     <h5 class="mb-4 mt-4">Europa</h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">España</a>
+                        <a href="/fantasy/views/paquetes.jsp">España</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Francia</a>
+                        <a href="/fantasy/views/paquetes.jsp">Francia</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Italia</a>
+                        <a href="/fantasy/views/paquetes.jsp">Italia</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Grecia</a>
+                        <a href="/fantasy/views/paquetes.jsp">Grecia</a>
                     </p>
                     <p>
-                        <a href="/fantasy/viws/paquetes.jsp">Inglaterra</a>
+                        <a href="/fantasy/views/paquetes.jsp">Inglaterra</a>
                     </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xs-2 mx-auto mt3">
@@ -81,7 +81,7 @@
                         <a href="/fantasy/views/privacidad.jsp">Polí­tica de privacidad</a>
                     </p>
                     <p>
-                        <a href="https://autogestion.produccion.gob.ar/consumidores">Defensa al Consumidor</a>
+                        <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank">Defensa al Consumidor</a>
                     </p>
                     <p>
                         <a href="">Botón de arrepentimiento</a>
