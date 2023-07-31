@@ -10,3 +10,4 @@ El mismo fue realizado con HTML, CSS, Javascrip, Jquery, Boostrap para el front-
 
  <br><br>
 
+![captura](https://github.com/Marl8/Fantasy-travel-java/assets/116129705/11f202ee-96f5-49c8-b873-81090b139ddf)
